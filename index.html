@@ -20,28 +20,38 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <meta charset='utf-8'>
         <title>OGEPLAY</title>
         <style>
+            body{background: linear-gradient(to bottom right,#063fAB,#01258A);color:white;font-size:28px;text-align:centre;overflow:hidden;}
+            .info{position:relative;top:39%;}
             @font-face {
                 font-family: 'logging';
-                src: url('fonts/LiberationMono-Regular.ttf');
+                src: url('fonts/liberationMono-Regular.ttf');
             }
             #console {
                 font-family: 'logging';
             }
+            
         </style>
-        <script>
-        if (window.applicationCache.status=='0')
-        {
-          window.location.replace("cache.html");
-        }
-        </script>
     </head>
-    <body style="background-image: url('gambar/gambar_1.jpeg');background-repeat: no-repeat; background-size: 100% 100%; background-position:centre; min-height: 100vh;">
-        <br>
-        <br>
-        <br>
-        <a href='./about.html' data-jslicense='1'</a>
-        <br>
-        <pre id='console'></pre>
+    <body style="background-image: url('gambar/gambar_1.jpeg');background-repeat: no-repeat; background-size: 100% 100%; background-position:
+        centre; min-height: 100vh;">
+    <script>
+        if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+            </script>
+    <pre id="console">
+        "STAGE: UAF SSV "
+        "ssv_len: 0x50 "
+        "readyState now: complete "
+        "readyState now: complete "
+        "pop 0 came "
+        "input blur came "
+        "foot blur came "
+        "pop 1 came "
+        "foo blur came "
+    </pre>
+    <script src="payload.js"></script>
+    <script type="module" src="./alert.mjs"></script>
+    <input id="input">
+    <input id="foo">
+    <a id="bar"></a>
     </body>
-    <script type='module' src='./alert.mjs'></script>
 </html>
