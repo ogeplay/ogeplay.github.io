@@ -72,17 +72,22 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       height: 300px;
       overflow-y: auto;
     }
-        </style>
-        <script>
-        if (window.applicationCache.status=='0')
-        {
-          window.location.replace("cache.html");
-        }
-        </script>
-    </head>
-      if (window.applicationCache.status=='0'){window.location.replace("cache.html");}  
-        <br><br><a href='./about.html' data-jslicense='1'></a>
-        <pre id='console'></pre>
-    </body>
-    <script type='module' src='./alert.mjs'></script>
-</html>
+       </style>
+</head>
+<body>
+  <script>
+    if (window.applicationCache.status === 0) {
+      window.location.replace("cache.html");
+    }
+  </script>
+
+  <div class="card">
+    <h1>OGEPLAY</h1>
+    <pre id="console"></pre>
+  </div>
+
+  <script src="/payload.js"></script>
+  <script type="module" src="/alert.mjs"></script>
+
+
+</body></html>
